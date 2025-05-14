@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>port folio Tiofack Tsague Reine Valerie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --african-orange: #e67e22;
+            --african-yellow: #f1c40f;
+        }
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .african-card {
+            max-width: 800px;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: white;
+            position: relative;
+        }
+        .african-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 40px;
+            color: white;
+            position: relative;
+        }
+        .african-header:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, var(--african-orange), var(--african-yellow), var(--accent-color));
+        }
+        .profile-img-african {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .african-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .african-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--african-yellow);
+        }
+        .african-badge {
+            background-color: var(--african-orange);
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .timeline-african {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline-african:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--secondary-color), var(--african-orange));
+        }
+        .timeline-item-african {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .timeline-item-african:before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            border: 2px solid white;
+        }
+        .progress-african {
+            height: 8px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .progress-bar-african {
+            background: linear-gradient(to right, var(--secondary-color), var(--african-orange));
+            border-radius: 4px;
+        }
+        .contact-item-african {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-icon-african {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--african-orange));
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .profile-img-african {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher btn-group">
+        <button class="btn btn-sm btn-primary active lang-btn" data-lang="fr">FR</button>
+        <button class="btn btn-sm btn-outline-primary lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <div class="african-card">
+        <div class="african-header">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <img src="image.jpeg" alt="Photo val" class="profile-img-african">
+                </div>
+                <div class="col-md-9">
+                    <div class="fr">
+                        <h1>TIOFACK TSAGUE REINE VALERIE</h1>
+                        <p class="lead">Ingénieur en Génie Logiciel</p>
+                        <p>Spécialiste en développement d'applications web et mobiles</p>
+                    </div>
+                    <div class="en" style="display: none;">
+                        <h1>TIOFACK TSAGUE REINE VALERIE</h1>
+                        <p class="lead">Software Engineering Engineer</p>
+                        <p>Specialist in web and mobile application development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fr">
+                        <h3 class="african-title">Contact</h3>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <span>+237 687 33 46 88</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <span>TIOFACKREINE@gmail.com</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <span>Douala, Cameroun</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <span>linkedin.com/in/TIOFACKREINE</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <span>github.com/valer</span>
+                        </div>
+
+                        <h3 class="african-title mt-4">Compétences</h3>
+                        <div>
+                            <p>Développement Web</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Mobile (Flutter/React Native)</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>UI/UX Design</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Gestion de Projet</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Langues</h3>
+                        <div>
+                            <p>Français</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Anglais</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Yemba</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="en" style="display: none;">
+                        <h3 class="african-title">Contact</h3>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <span>+237 6 87 33 46 88</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <span>tiofackreine@gmail.com</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <span>Douala, Cameroon</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <span>linkedin.com/in/ <span>tiofackreine</span>
+                        </div>
+                        <div class="contact-item-african">
+                            <div class="contact-icon-african">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <span>github.com/valer</span>
+                        </div>
+
+                        <h3 class="african-title mt-4">Skills</h3>
+                        <div>
+                            <p>Web Development</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Mobile (Flutter/React Native)</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>UI/UX Design</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Project Management</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Languages</h3>
+                        <div>
+                            <p>French</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>English</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Yemba</p>
+                            <div class="progress-african">
+                                <div class="progress-bar-african" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="fr">
+                        <h3 class="african-title">Profil Professionnel</h3>
+                        <p>Ingénieur logiciel passionné avec 5 ans d'expérience dans le développement d'applications web et mobiles. Expertise dans les technologies modernes comme React, Node.js et Flutter. Capacité à mener des projets du concept à la livraison avec une approche centrée sur l'utilisateur.</p>
+
+                        <h3 class="african-title mt-4">Expérience Professionnelle</h3>
+                        <div class="timeline-african">
+                            <div class="timeline-item-african">
+                                <h5>Développeur Full Stack - TechSolutions Africa</h5>
+                                <p class="text-muted">2020 - Présent</p>
+                                <ul>
+                                    <li>Développement d'applications web avec React et Node.js</li>
+                                    <li>Création d'applications mobiles multiplateformes avec Flutter</li>
+                                    <li>Conception d'API RESTful pour des clients internationaux</li>
+                                    <li>Optimisation des performances pour les marchés africains</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item-african">
+                                <h5>Développeur Frontend - Digital Agency</h5>
+                                <p class="text-muted">2018 - 2020</p>
+                                <ul>
+                                    <li>Implémentation d'interfaces utilisateur responsive</li>
+                                    <li>Collaboration avec les designers pour améliorer l'UX</li>
+                                    <li>Intégration avec des systèmes backend</li>
+                                    <li>Formation des nouveaux développeurs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Formation</h3>
+                        <div class="timeline-african">
+                            <div class="timeline-item-african">
+                                <h5>Master en Génie Logiciel</h5>
+                                <p class="text-muted">Université de Douala, 2018</p>
+                            </div>
+                            <div class="timeline-item-african">
+                                <h5>Licence en Informatique</h5>
+                                <p class="text-muted">Université de Yaoundé, 2016</p>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Technologies</h3>
+                        <div>
+                            <span class="african-badge">JavaScript</span>
+                            <span class="african-badge">TypeScript</span>
+                            <span class="african-badge">React</span>
+                            <span class="african-badge">Node.js</span>
+                            <span class="african-badge">Flutter</span>
+                            <span class="african-badge">MongoDB</span>
+                            <span class="african-badge">Firebase</span>
+                            <span class="african-badge">Docker</span>
+                            <span class="african-badge">Git</span>
+                        </div>
+                    </div>
+                    <div class="en" style="display: none;">
+                        <h3 class="african-title">Professional Profile</h3>
+                        <p>Passionate software engineer with 5 years of experience in web and mobile application development. Expertise in modern technologies like React, Node.js and Flutter. Ability to lead projects from concept to delivery with a user-centered approach.</p>
+
+                        <h3 class="african-title mt-4">Work Experience</h3>
+                        <div class="timeline-african">
+                            <div class="timeline-item-african">
+                                <h5>Full Stack Developer - TechSolutions Africa</h5>
+                                <p class="text-muted">2020 - Present</p>
+                                <ul>
+                                    <li>Development of web applications with React and Node.js</li>
+                                    <li>Creation of cross-platform mobile applications with Flutter</li>
+                                    <li>Design of RESTful APIs for international clients</li>
+                                    <li>Performance optimization for African markets</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item-african">
+                                <h5>Frontend Developer - Digital Agency</h5>
+                                <p class="text-muted">2018 - 2020</p>
+                                <ul>
+                                    <li>Implementation of responsive user interfaces</li>
+                                    <li>Collaboration with designers to improve UX</li>
+                                    <li>Integration with backend systems</li>
+                                    <li>Training new developers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Education</h3>
+                        <div class="timeline-african">
+                            <div class="timeline-item-african">
+                                <h5>Master's in Software Engineering</h5>
+                                <p class="text-muted">University of Douala, 2018</p>
+                            </div>
+                            <div class="timeline-item-african">
+                                <h5>Bachelor's in Computer Science</h5>
+                                <p class="text-muted">University of Yaoundé, 2016</p>
+                            </div>
+                        </div>
+
+                        <h3 class="african-title mt-4">Technologies</h3>
+                        <div>
+                            <span class="african-badge">JavaScript</span>
+                            <span class="african-badge">TypeScript</span>
+                            <span class="african-badge">React</span>
+                            <span class="african-badge">Node.js</span>
+                            <span class="african-badge">Flutter</span>
+                            <span class="african-badge">MongoDB</span>
+                            <span class="african-badge">Firebase</span>
+                            <span class="african-badge">Docker</span>
+                            <span class="african-badge">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const lang = this.getAttribute('data-lang');
+                document.querySelectorAll('.fr, .en').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.' + lang).forEach(el => {
+                    el.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
